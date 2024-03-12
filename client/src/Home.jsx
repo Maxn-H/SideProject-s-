@@ -1,7 +1,8 @@
-import './App.css'
+//import './App.css'
 import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
+import './styles.css'
 
 
  function Home() {
@@ -18,10 +19,19 @@ const getQuote =() => {
 }
     return(
         <div className='background'>
-        <div className="Application">
-             <h2>Random Quote Generator</h2>
-             <button button onClick={getQuote}>Get quote</button>
-            { quote && <p className='quote'>{quote}</p>}
+        <div>
+             <h2 className='title'>Random Quote Generator</h2>
+             <div className ='Application'>
+                <div>
+                <button classname="btn "button onClick={getQuote}>Get quote</button>
+                </div>
+            
+             <div className='quoteContainer'>
+             { quote && <p className='quote'>{quote}</p>}
+             </div>
+           
+             </div>
+            
         </div>
         </div>
         

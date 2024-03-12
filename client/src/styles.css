@@ -1,0 +1,101 @@
+.d-flex {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.bg-white {
+    padding: 3%;
+    width: 25%;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+}
+
+.form-control {
+    border-radius: 0%;
+}
+.title {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #008ee6, 0 0 40px #00c4e6, 0 0 50px #00ade6, 0 0 60px #00a9e6, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+.background {
+ background-image: url("pexels.jpg");
+ height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn {
+    color: white;
+    background-color: green;
+    width: 100%;
+    border-radius: 0%;
+}
+
+.loginBtn {
+    color: white;
+    background-color: green;
+    width: 100%;
+    
+}
+
+.Application {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    
+}
+.button {
+    position:fixed;
+    top:30px;
+    right:5px;
+}
+
+.button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+.quoteContainer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+button:hover {
+    background-color: black;
+  color: white;
+}
+ .quote {
+    position: absolute;
+    margin-bottom: -5%;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+    background-color: pink;
+    
+ }

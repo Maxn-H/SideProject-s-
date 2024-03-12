@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
+import './styles.css'
 
 function Signup() {
 const [name, setName] = useState()
@@ -21,8 +22,8 @@ const handleSubmit = (e) => {
 
 
     return ( 
-<div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
-<div className="bg-white p-3 rounded w-25">
+<div className="d-flex">
+<div className="bg-white">
 <h2>Register</h2>
 <form onSubmit={handleSubmit}>
     <div className="mb-3">
@@ -34,7 +35,7 @@ const handleSubmit = (e) => {
         placeholder="Enter Name"
         autoComplete="off"
         name="email"
-        className="form-control rounded-0"
+        className="form-control"
         onChange={(e) => setName(e.target.value)} 
         />
     </div>
@@ -47,7 +48,7 @@ const handleSubmit = (e) => {
         placeholder="Enter Email"
         autoComplete="Off"
         name="email"
-        className="form-control rounded-0"
+        className="form-control"
         onChange={(e) => setEmail(e.target.value)}
         />
     </div>
@@ -59,16 +60,16 @@ const handleSubmit = (e) => {
         type="password"
         placeholder="Enter password"
         name="password"
-        className="form-control rounded-0"
+        className="form-control"
         onChange={(e) => setPassword(e.target.value)}
         />
     </div>
-    <button type="submit" className="btn btn-success w-100 rounded-0">
+    <button type="submit" className="btn">
         Register
     </button>
     </form>
     <p>Already have an account</p>
-    <Link to="/login" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
+    <Link to="/login" className="btn">
         Login
     </Link>
 </div>
