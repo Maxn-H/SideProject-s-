@@ -19,7 +19,7 @@ const handleSubmit = (e) => {
         if(result.data === "Success") {
             navigate('/home')
         }
-        
+           
     })
     .catch(err=> console.log(err))
 }
